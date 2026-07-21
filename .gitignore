@@ -11,7 +11,8 @@
 .pnp.*
 
 **/node_modules
-.env
+.env*
+!.env.example
 
 # from solito --------------------------------------
 
