@@ -14,9 +14,7 @@ flowchart TD
     Service --> DB[Prisma ORM]
     DB --> PostgreSQL[(PostgreSQL Database)]
 
-    Service --> LLM[LlmService Boundary]
-
-    LLM --> OpenAI[OpenAI LLM Service]
+    Service --> OpenAI[OpenAI LLM Service]
 
     OpenAI --> OpenAIAPI[OpenAI API]
 ```
