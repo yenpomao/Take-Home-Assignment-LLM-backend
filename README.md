@@ -4,9 +4,9 @@ A Node.js-Fastify backend for an AI chat application with multiple conversation 
 
 ## Architecture
 
-
+```mermaid
 flowchart TD
-Client[Client Application<br/>Web / Mobile] --> API[Fastify API Layer]
+    Client[Client Application<br/>Web / Mobile] --> API[Fastify API Layer]
 
     API --> Routes[Route Handlers]
     Routes --> Service[Conversation Service]
@@ -19,6 +19,7 @@ Client[Client Application<br/>Web / Mobile] --> API[Fastify API Layer]
     LLM --> OpenAI[OpenAI LLM Service]
 
     OpenAI --> OpenAIAPI[OpenAI API]
+```
 
 ## Database Schema
 
