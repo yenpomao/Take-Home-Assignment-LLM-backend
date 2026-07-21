@@ -107,6 +107,7 @@ PORT=3000
 For `Docker` check Docker section.
 ```bash
 pnpm install
+docker compose up -d database
 pnpm --filter server prisma:generate
 pnpm --filter server prisma:migrate
 pnpm dev
