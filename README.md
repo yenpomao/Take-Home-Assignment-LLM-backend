@@ -121,6 +121,7 @@ pnpm test
 
 Tests use Vitest and Fastify injection. They mock the LLM service response and use an in-memory Prisma to fake so the route and service behavior can be verified without calling a real model.
 
+The project uses GitHub Actions for continuous integration, automatically executing the test on every push to the `main` branch.
 
 ## Docker
 
